@@ -3,7 +3,7 @@ function User({ users }) {
   return (
     <ul>
       {users.map((user) => (
-        <li>{user.name.first}</li>
+        <li key={user.login.uuid}>{user.name.first}</li>
       ))}
       hei
     </ul>

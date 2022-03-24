@@ -3,7 +3,7 @@ function News({ articles }) {
   return (
     <ul>
       {articles.map((article) => (
-        <li>
+        <li key={article.title}>
           <img src={article.urlToImage}></img>
           {article.title}
         </li>
